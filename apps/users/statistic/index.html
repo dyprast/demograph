@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Users | By Hobby</title>
+    <title>Users | Statistic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
     <link href="/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -189,11 +189,11 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                  <h4 class="mb-0">Users By Hobby</h4>
+                  <h4 class="mb-0">Users Statistic</h4>
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item"><a href="javascript: void(0);">Users</a></li>
-                      <li class="breadcrumb-item">Users By Hobby</li>
+                      <li class="breadcrumb-item">Statistic</a></li>
                     </ol>
                   </div>
                 </div>
@@ -202,52 +202,11 @@
             <div class="row">
               <div class="col-12">
                 <div class="card">
-                  <div class="card-header">
-                    <button class="btn btn-primary">Add New</button>
-                  </div>
                   <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table mb-0">
-                        <thead>
-                          <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Hobby</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>markzuckerberg@outlook.com</td>
-                            <td>Basketball</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>jacob@outlook.com</td>
-                            <td>Basketball</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>larrypage@outlook.com</td>
-                            <td>Basketball</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <h4 class="card-title mb-4">Users Statistic since app has launched</h4>
+                    <div id="line_chart_dashed" class="apex-charts" dir="ltr"></div>        
                   </div>
-              </div>
+                </div>
               </div>
           </div>
         </div>

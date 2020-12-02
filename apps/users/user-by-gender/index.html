@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Users | Users By Hobby</title>
+    <title>Users | By Gender</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
     <link href="/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
@@ -15,22 +15,6 @@
         <div class="navbar-header">
           <div class="d-flex">
             <div class="navbar-brand-box">
-              <a href="/" class="logo logo-dark">
-              <span class="logo-sm">
-              <img src="/assets/images/logo-sm.png" alt="" height="22">
-              </span>
-              <span class="logo-lg">
-              <img src="/assets/images/logo-dark.png" alt="" height="20">
-              </span>
-              </a>
-              <a href="/" class="logo logo-light">
-              <span class="logo-sm">
-              <img src="/assets/images/logo-sm.png" alt="" height="22">
-              </span>
-              <span class="logo-lg">
-              <img src="/assets/images/logo-light.png" alt="" height="20">
-              </span>
-              </a>
             </div>
             <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
             <i class="fa fa-fw fa-bars"></i>
@@ -137,10 +121,7 @@
               <div class="dropdown-menu dropdown-menu-right">
                 <!-- item-->
                 <a class="dropdown-item" href="#"><i class="uil uil-user-circle font-size-18 align-middle text-muted mr-1"></i> <span class="align-middle">View Profile</span></a>
-                <a class="dropdown-item" href="#"><i class="uil uil-wallet font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">My Wallet</span></a>
-                <a class="dropdown-item d-block" href="#"><i class="uil uil-cog font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Settings</span> <span class="badge badge-soft-success badge-pill mt-1 ml-2">03</span></a>
-                <a class="dropdown-item" href="#"><i class="uil uil-lock-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Lock screen</span></a>
-                <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
+                <a class="dropdown-item" href="javascript:void(0)" onclick="submitLogout()"><i class="uil uil-sign-out-alt font-size-18 align-middle mr-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
               </div>
             </div>
             <div class="dropdown d-inline-block">
@@ -154,20 +135,10 @@
       <div class="vertical-menu">
         <div class="navbar-brand-box">
           <a href="/" class="logo logo-dark">
-          <span class="logo-sm">
-          <img src="/assets/images/logo-sm.png" alt="" height="22">
-          </span>
-          <span class="logo-lg">
-          <img src="/assets/images/logo-dark.png" alt="" height="20">
-          </span>
+            <h4 class="m-4 font-weight-bold text-dark">IGM BIG DATA</h4>
           </a>
           <a href="/" class="logo logo-light">
-          <span class="logo-sm">
-          <img src="/assets/images/logo-sm.png" alt="" height="22">
-          </span>
-          <span class="logo-lg">
-          <img src="/assets/images/logo-light.png" alt="" height="20">
-          </span>
+            <h4 class="m-4 font-weight-bold text-dark">IGM BIG DATA</h4>
           </a>
         </div>
         <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
@@ -204,21 +175,12 @@
               </li>
               <li>
                 <a href="/apps/forecast/">
-                <i class="uil-home-alt"></i>
+                <i class="uil-cloud-moon-showers"></i>
                 <span>Forecast</span>
                 </a>
-              </li><li class="menu-title">Services</li>
-              <li>
-                <a href="javascript: void(0);" class="has-arrow waves-effect">
-                <i class="uil-headphones"></i>
-                <span>Customer Care</span>
-                </a>
-                <ul class="sub-menu" aria-expanded="false">
-                  <li><a href="/services/24hours-customer-complaint/">24 Hours Customer Complaint</a></li>
-                </ul>
-              </li>
             </ul>
           </div>
+          <!-- Sidebar -->
         </div>
       </div>
       <div class="main-content">
@@ -227,16 +189,66 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
-                  <h4 class="mb-0">User By Hobby</h4>
+                  <h4 class="mb-0">Users By Gender</h4>
                   <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                       <li class="breadcrumb-item"><a href="javascript: void(0);">Users</a></li>
-                      <li class="breadcrumb-item active">User By Hobby/li>
+                      <li class="breadcrumb-item">By Gender</a></li>
                     </ol>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <button class="btn btn-primary">Add New</button>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table mb-0">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>markzuckerberg@outlook.com</td>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>jacob@outlook.com</td>
+                            <td>Male</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>larrypage@outlook.com</td>
+                            <td>Male</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+              </div>
+              </div>
           </div>
         </div>
         <footer class="footer">
@@ -265,13 +277,23 @@
             <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
           </div>
           <div class="custom-control custom-switch mb-3">
-            <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css" />
+            <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch" data-bsStyle="/assets/css/bootstrap-dark.min.css" data-appStyle="/assets/css/app-dark.min.css" />
             <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
           </div>
         </div>
       </div>
       <!-- end slimscroll-menu-->
     </div>
+
+    <script>
+      let localStorage = window.localStorage
+      const logged = localStorage.getItem("logged")
+      if (!logged) window.location = "/login"
+      function submitLogout() {
+        localStorage.clear()
+        window.location = "/login"
+      }
+    </script>
 
     <script src="/assets/js/layout.js"></script>
     <script src="/assets/libs/jquery/jquery.min.js"></script>
@@ -282,6 +304,8 @@
     <script src="/assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="/assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
 
+    <script src="/assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="/assets/js/pages/apexcharts.init.js"></script>
     <script src="/assets/js/app.js"></script>
   </body>
 </html>
